@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product - Tech2etc</title>
+
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <header id="header">
+    <a href="index.html" class="brand" aria-label="Go to Home">
+      <img src="img/logo.png" class="logo" alt="Company Logo" />
+    </a>
+
+    <nav aria-label="Main Navigation">
+      <ul id="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a class="active" href="sproduct.html">Single Product</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li>
+          <a href="cart.html" aria-label="Cart">
+            <i class="fas fa-shopping-bag"></i>
+            <span class="badge" id="cartCount">0</span>
+          </a>
+        </li>
+        <li class="close">
+          <button id="close" type="button" aria-label="Close Menu">
+            <i class="far fa-times"></i>
+          </button>
+        </li>
+      </ul>
+
+      <div id="mobile">
+        <a href="cart.html" aria-label="Cart">
+          <i class="fas fa-shopping-bag"></i>
+          <span class="badge" id="cartCountMobile">0</span>
+        </a>
+        <button id="bar" type="button" aria-label="Open Menu">
+          <i class="fas fa-outdent"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <section id="prodetails" class="section-p1">
+    <div class="single-pro-image">
+      <img src="img/products/f1.jpg" width="100%" id="MainImg" alt="Product" />
+      <div class="small-img-group">
+        <div class="small-img-col"><img src="img/products/f1.jpg" class="small-img" alt="thumb1" /></div>
+        <div class="small-img-col"><img src="img/products/f2.jpg" class="small-img" alt="thumb2" /></div>
+        <div class="small-img-col"><img src="img/products/f3.jpg" class="small-img" alt="thumb3" /></div>
+        <div class="small-img-col"><img src="img/products/f4.jpg" class="small-img" alt="thumb4" /></div>
+      </div>
+    </div>
+
+    <div class="single-pro-details">
+      <h6>Home / T-Shirt</h6>
+      <h4>Men's Fashion T Shirt</h4>
+      <h2>$78.00</h2>
+
+      <select aria-label="Select size">
+        <option>Select Size</option>
+        <option>Small</option>
+        <option>Medium</option>
+        <option>Large</option>
+        <option>XL</option>
+      </select>
+
+      <input type="number" value="1" min="1" aria-label="Quantity" id="qty" />
+      <button
+        class="normal"
+        type="button"
+        id="addSingleToCart"
+        data-id="p1"
+        data-name="Men's Fashion T Shirt"
+        data-price="78"
+        data-img="products/f1.jpg"
+      >
+        Add To Cart
+      </button>
+
+      <h4>Product Details</h4>
+      <span>
+        Bahan nyaman, cutting modern, dan cocok untuk daily wear.
+        Ini halaman single product template yang bisa kamu kembangkan.
+      </span>
+    </div>
+  </section>
+
+  <section id="product1" class="section-p1">
+    <h2>Featured Products</h2>
+    <p>Recommended for you</p>
+    <div class="pro-container">
+      <!-- Product 1 -->
+      <div class="pro">
+        <img src="img/products/f1.jpg" alt="Cartoon Astronaut T-Shirts" />
+        <div class="des">
+          <span>adidas</span>
+          <h5>Cartoon Astronaut T-Shirts</h5>
+          <div class="star" aria-label="Rating 4.5 out of 5">
+            <i class="fas fa-star" aria-hidden="true"></i>
+            <i class="fas fa-star" aria-hidden="true"></i>
+            <i class="fas fa-star" aria-hidden="true"></i>
+            <i class="fas fa-star" aria-hidden="true"></i>
+            <i class="fas fa-star-half-alt" aria-hidden="true"></i>
+          </div>
+          <h4>$78</h4>
+        </div>
+        <a href="sproduct.html" class="cart" aria-label="View Product">
+          <i class="fas fa-shopping-cart" aria-hidden="true"></i>
+        </a>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="pro">
+        <img src="img/products/f2.jpg" alt="Floral Summer Shirt" />
+        <div class="des">
+          <span>zara</span>
+          <h5>Floral Summer Shirt</h5>
+          <div class="star" aria-label="Rating 5 out of 5">
+            <i class="fas fa-star" aria-hidden="true"></i>
+            <i class="fas fa-star" aria-hidden="true"></i>
+            <i class="fas fa-star" aria-hidden="true"></i>
+            <i class="fas fa-star" aria-hidden="true"></i>
+            <i class="fas fa-star" aria-hidden="true"></i>
+          </div>
+          <h4>$64</h4>
+        </div>
+        <a href="sproduct.html" class="cart" aria-label="View Product">
+          <i class="fas fa-shopping-cart" aria-hidden="true"></i>
+        </a>
+      </div>
+       <!-- Product 3 -->
+      <div class="pro">
+        <img src="img/products/f3.jpg" alt="Casual Denim Jacket" />
+        <div class="des">
+          <span>levi's</span>
+          <h5>Casual Denim Jacket</h5>
+          <div class="star" aria-label="Rating 4 out of 5">
+            <i class="fas fa-star" aria-hidden="true"></i>
+            <i class="fas fa-star" aria-hidden="true"></i>
+            <i class="fas fa-star" aria-hidden="true"></i>
+            <i class="fas fa-star" aria-hidden="true"></i>
+            <i class="far fa-star" aria-hidden="true"></i>
+          </div>
+          <h4>$92</h4>
+        </div>
+        <a href="sproduct.html" class="cart" aria-label="View Product">
+          <i class="fas fa-shopping-cart" aria-hidden="true"></i>
+        </a>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="pro">
+        <img src="img/products/f4.jpg" alt="Classic Polo Shirt" />
+        <div class="des">
+          <span>lacoste</span>
+          <h5>Classic Polo Shirt</h5>
+          <div class="star" aria-label="Rating 4.5 out of 5">
+            <i class="fas fa-star" aria-hidden="true"></i>
+            <i class="fas fa-star" aria-hidden="true"></i>
+            <i class="fas fa-star" aria-hidden="true"></i>
+            <i class="fas fa-star" aria-hidden="true"></i>
+            <i class="fas fa-star-half-alt" aria-hidden="true"></i>
+          </div>
+          <h4>$70</h4>
+        </div>
+        <a href="sproduct.html" class="cart" aria-label="View Product">
+          <i class="fas fa-shopping-cart" aria-hidden="true"></i>
+        </a>
+      </div>
+
+   <!-- Footer -->
+  <footer class="section-p1">
+    <div class="col">
+      <img class="logo" src="img/logo.png" alt="Company Logo" />
+      <h4>Contact</h4>
+      <p><strong>Address:</strong> 123 Street Name, City, Country</p>
+      <p><strong>Phone:</strong> +62 812 3456 7890</p>
+      <p><strong>Hours:</strong> 10:00 - 18:00, Mon - Sat</p>
+
+      <div class="follow">
+        <h4>Follow Us</h4>
+        <div class="icon" aria-label="Social Media Links">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+          <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p" aria-hidden="true"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <h4>About</h4>
+      <a href="about.html">About Us</a>
+      <a href="#">Delivery Information</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms & Conditions</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+
+    <div class="col">
+      <h4>My Account</h4>
+      <a href="#">Sign In</a>
+      <a href="cart.html">View Cart</a>
+      <a href="#">My Wishlist</a>
+      <a href="#">Track My Order</a>
+      <a href="#">Help</a>
+    </div>
+
+    <div class="col install">
+      <h4>Install App</h4>
+      <p>From App Store or Google Play</p>
+      <div class="row">
+        <img src="img/pay/app.jpg" alt="App Store" />
+        <img src="img/pay/play.jpg" alt="Google Play" />
+      </div>
+      <p>Secured Payment Gateways</p>
+      <img src="img/pay/pay.png" alt="Payment Methods" />
+    </div>
+
+    <div class="copyright">
+      <p>&copy; 2026 Tech2etc — All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
